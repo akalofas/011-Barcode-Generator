@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.label-sheet {
+  width: 210mm;
+  height: 297mm;
+  padding-top: 10.76330691mm;
+  padding-left: 4.875900721mm;
+  padding-right: 4.875900721mm;
+  padding-bottom: 10.76336025mm;
+  display: grid;
+  grid-template-columns: 38.16653323mm 2.353883106mm 38.16653323mm 2.353883106mm 38.16653323mm 2.353883106mm 38.16653323mm 2.353883106mm 38.16653323mm;
+  grid-template-rows: 20.85390713mm 0.336353341mm repeat(12, 20.85390713mm 0.336353341mm);
+  gap: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.label {
+  border: 1px solid #000;
+  padding: 1.5px 1mm 1mm 1mm;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  text-align: left;
+  width: 38.16653323mm;
+  height: 20.85390713mm;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.label-product-code {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.label-size-range {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 12px;
+  padding-right: 8px;
+}
+
+.circle {
+  display: inline-block;
+  padding: 1px 4px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  line-height: 1;
+  text-align: center;
+  font-size: 11px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.label-barcode {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.label-barcode img {
+  width: 100%;
+  height: auto;
+  max-height: 10mm;
+}
+
+.label-barcode-text {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 1mm;
+}
