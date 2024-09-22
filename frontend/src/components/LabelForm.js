@@ -49,7 +49,7 @@ const LabelForm = ({ onGenerateLabels }) => {
 		}
 
 		resetForm();
-		handleGenerate(updatedLabels); // Regenerate labels after adding or updating
+		handleGenerate(updatedLabels);
 	};
 
 	const handleEditLabel = (index) => {
@@ -68,7 +68,7 @@ const LabelForm = ({ onGenerateLabels }) => {
 	const handleDeleteLabel = (index) => {
 		const updatedLabels = labelData.filter((_, i) => i !== index);
 		setLabelData(updatedLabels);
-		handleGenerate(updatedLabels); // Regenerate labels after deleting
+		handleGenerate(updatedLabels);
 	};
 
 	const resetForm = () => {
@@ -194,7 +194,6 @@ const LabelForm = ({ onGenerateLabels }) => {
 					? 'Update Label'
 					: 'Add More Product Labels'}
 			</button>
-			{/* Restored Generate Button */}
 			{labelData.length > 0 && (
 				<div>
 					<h3>Products Added:</h3>
